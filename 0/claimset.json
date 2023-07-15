@@ -1,0 +1,29 @@
+{
+  "@context": ["https://www.w3.org/ns/credentials/v2"],
+  "id": "https://status-list.vc/0",
+  "type": ["VerifiableCredential", "StatusList2021Credential"],
+  "issuer": "did:web:status-list.vc",
+  "validFrom": "2032-07-15T12:00:00.992Z",
+  "credentialStatus": [
+    {
+      "id": "https://status-list.vc/0#0",
+      "type": "StatusList2021Entry",
+      "statusPurpose": "revocation",
+      "statusListIndex": "0",
+      "statusListCredential": "https://status-list.vc/0"
+    },
+    {
+      "id": "https://status-list.vc/0#1",
+      "type": "StatusList2021Entry",
+      "statusPurpose": "revocation",
+      "statusListIndex": "1",
+      "statusListCredential": "https://status-list.vc/0"
+    }
+  ],
+  "credentialSubject": {
+    "id": "https://status-list.vc/0",
+    "type": "StatusList2021",
+    "statusPurpose": "revocation",
+    "encodedList": "H4sIAAAAAAAAA2MAAI3vAtIBAAAA"
+  }
+}

@@ -67,3 +67,24 @@ transmute w3c status-list update \
 --index 0 \
 --status true
 ```
+
+## Add a status to credential
+
+```sh
+transmute w3c status-list add \
+--id https://status-list.vc/1 \
+--type StatusList2021Entry \
+--purpose revocation \
+--index 0 \
+--claimset 0/claimset.json
+```
+
+## Issue a credential with a status
+
+```sh
+transmute w3c credential issue \
+--issuer-key private.signing.jwk.json \
+--issuer-kid did:web:status-list.vc#0 \
+--claimset  0/claimset.json \
+--verifiable-credential 0/index
+```
