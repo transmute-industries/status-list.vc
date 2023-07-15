@@ -1,0 +1,18 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2"
+  ],
+  "id": "https://status-list.vc/1",
+  "type": [
+    "VerifiableCredential",
+    "StatusList2021Credential"
+  ],
+  "issuer": "did:web:status-list.vc",
+  "validFrom": "2032-07-15T12:00:00.992Z",
+  "credentialSubject": {
+    "id": "https://status-list.vc/1#list",
+    "type": "StatusList2021",
+    "statusPurpose": "revocation",
+    "encodedList": "H4sIAAAAAAAAA2MAAI3vAtIBAAAA"
+  }
+}

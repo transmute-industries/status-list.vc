@@ -1,0 +1,33 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    {
+      "@vocab": "https://www.iana.org/assignments/jose#"
+    }
+  ],
+  "id": "did:web:status-list.vc",
+  "verificationMethod": [
+    {
+      "id": "#0",
+      "type": "JsonWebKey",
+      "controller": "did:web:status-list.vc",
+      "publicKeyJwk": {
+        "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:0qeohpP4Y41iaeG-JBBSD59HfLXZf4Ki6WnANozOeFM",
+        "kty": "EC",
+        "crv": "P-384",
+        "alg": "ES384",
+        "x": "ruGe2V1Eq5TW_lZquDda-pse0bAWKSFwb-UNeXLSuMnwNOFghVxgZIvgDoZRdLfb",
+        "y": "mjhbxan_hDnNP2tlIfYf_zGvfZ174qAWwWOlYiHB62KJu9Y8IQ7CiL425WwQ3aVK"
+      }
+    }
+  ],
+  "authentication": [
+    "#0"
+  ],
+  "assertionMethod": [
+    "#0"
+  ],
+  "keyAgreement": [
+    "#0"
+  ]
+}
