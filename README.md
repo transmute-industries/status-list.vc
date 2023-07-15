@@ -88,3 +88,14 @@ transmute w3c credential issue \
 --claimset  0/claimset.json \
 --verifiable-credential 0/index
 ```
+
+## Validate a credential with status
+
+```sh
+transmute w3c credential validate \
+--verifiable-credential 0/index
+```
+
+... change status ...
+
+... validate again ...
