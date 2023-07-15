@@ -90,13 +90,6 @@ transmute w3c credential issue \
 --verifiable-credential 0/index.json
 ```
 
-## Validate a credential with status
-
-```sh
-transmute w3c credential validate \
---verifiable-credential 0/index.json
-```
-
 ## Update multiple statuses
 
 ```sh
@@ -115,4 +108,9 @@ transmute w3c status-list update \
 --status true
 ```
 
-... validate again ...
+## Validate multiple statuses
+
+```sh
+transmute w3c credential validate \
+--verifiable-credential 0/index.json
+```

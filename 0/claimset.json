@@ -8,7 +8,7 @@
     {
       "id": "https://status-list.vc/0#0",
       "type": "StatusList2021Entry",
-      "statusPurpose": "revocation",
+      "statusPurpose": "suspension",
       "statusListIndex": "0",
       "statusListCredential": "https://status-list.vc/0"
     },
@@ -23,7 +23,7 @@
   "credentialSubject": {
     "id": "https://status-list.vc/0",
     "type": "StatusList2021",
-    "statusPurpose": "revocation",
+    "statusPurpose": "suspension",
     "encodedList": "H4sIAAAAAAAAA2MAAI3vAtIBAAAA"
   }
 }
