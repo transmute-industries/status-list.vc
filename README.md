@@ -1,6 +1,7 @@
 # status-list.vc
 
 - https://status-list.vc
+- https://status-list.vc/0
 - https://status-list.vc/1
 - https://status-list.vc/.well-known/did.json
 
