@@ -13,11 +13,11 @@
       "statusListCredential": "https://status-list.vc/0"
     },
     {
-      "id": "https://status-list.vc/0#1",
+      "id": "https://status-list.vc/1#1",
       "type": "StatusList2021Entry",
       "statusPurpose": "revocation",
       "statusListIndex": "1",
-      "statusListCredential": "https://status-list.vc/0"
+      "statusListCredential": "https://status-list.vc/1"
     }
   ],
   "credentialSubject": {

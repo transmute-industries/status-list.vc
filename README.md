@@ -97,6 +97,22 @@ transmute w3c credential validate \
 --verifiable-credential 0/index.json
 ```
 
-... change status ...
+## Update multiple statuses
+
+```sh
+transmute w3c status-list update \
+--issuer-key private.signing.jwk.json \
+--verifiable-credential 0/index.json \
+--index 0 \
+--status false
+```
+
+```sh
+transmute w3c status-list update \
+--issuer-key private.signing.jwk.json \
+--verifiable-credential 1/index.json \
+--index 1 \
+--status true
+```
 
 ... validate again ...
