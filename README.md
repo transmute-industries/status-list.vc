@@ -6,6 +6,10 @@
 
 A website for testing W3C Verifiable Credentials.
 
+```sh
+dig status-list.vc +nostats +nocomments +nocmd
+```
+
 ## Create Private Signing Key
 
 ```sh
@@ -54,4 +58,12 @@ transmute w3c credential issue \
 --verifiable-credential 1/index.json
 ```
 
+## Update a Status
 
+```sh
+transmute w3c status-list update \
+--issuer-key private.signing.jwk.json \
+--verifiable-credential 1/index.json \
+--index 0 \
+--status true
+```
