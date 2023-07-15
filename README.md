@@ -86,14 +86,14 @@ transmute w3c credential issue \
 --issuer-key private.signing.jwk.json \
 --issuer-kid did:web:status-list.vc#0 \
 --claimset  0/claimset.json \
---verifiable-credential 0/index
+--verifiable-credential 0/index.json
 ```
 
 ## Validate a credential with status
 
 ```sh
 transmute w3c credential validate \
---verifiable-credential 0/index
+--verifiable-credential 0/index.json
 ```
 
 ... change status ...
