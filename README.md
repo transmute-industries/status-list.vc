@@ -116,3 +116,79 @@ transmute w3c status-list update \
 transmute w3c credential validate \
 --verifiable-credential 0/index.json
 ```
+
+If verifiable, this will product the following validation output, which can be further processed with policies.
+
+```json
+{
+  "issuer": {
+    "kid": "urn:ietf:params:oauth:jwk-thumbprint:sha-256:0qeohpP4Y41iaeG-JBBSD59HfLXZf4Ki6WnANozOeFM",
+    "kty": "EC",
+    "crv": "P-384",
+    "alg": "ES384",
+    "x": "ruGe2V1Eq5TW_lZquDda-pse0bAWKSFwb-UNeXLSuMnwNOFghVxgZIvgDoZRdLfb",
+    "y": "mjhbxan_hDnNP2tlIfYf_zGvfZ174qAWwWOlYiHB62KJu9Y8IQ7CiL425WwQ3aVK"
+  },
+  "credentialStatus": {
+    "valid": true,
+    "https://status-list.vc/0#0": {
+      "suspension": false,
+      "list": {
+        "@context": [
+          "https://www.w3.org/ns/credentials/v2"
+        ],
+        "id": "https://status-list.vc/0",
+        "type": [
+          "VerifiableCredential",
+          "StatusList2021Credential"
+        ],
+        "issuer": "did:web:status-list.vc",
+        "validFrom": "2032-07-15T12:00:00.992Z",
+        "credentialStatus": [
+          {
+            "id": "https://status-list.vc/0#0",
+            "type": "StatusList2021Entry",
+            "statusPurpose": "suspension",
+            "statusListIndex": "0",
+            "statusListCredential": "https://status-list.vc/0"
+          },
+          {
+            "id": "https://status-list.vc/1#1",
+            "type": "StatusList2021Entry",
+            "statusPurpose": "revocation",
+            "statusListIndex": "1",
+            "statusListCredential": "https://status-list.vc/1"
+          }
+        ],
+        "credentialSubject": {
+          "id": "https://status-list.vc/0",
+          "type": "StatusList2021",
+          "statusPurpose": "suspension",
+          "encodedList": "H4sIAAAAAAAAA2MAAI3vAtIBAAAA"
+        }
+      }
+    },
+    "https://status-list.vc/1#1": {
+      "revocation": true,
+      "list": {
+        "@context": [
+          "https://www.w3.org/ns/credentials/v2"
+        ],
+        "id": "https://status-list.vc/1",
+        "type": [
+          "VerifiableCredential",
+          "StatusList2021Credential"
+        ],
+        "issuer": "did:web:status-list.vc",
+        "validFrom": "2032-07-15T12:00:00.992Z",
+        "credentialSubject": {
+          "id": "https://status-list.vc/1#list",
+          "type": "StatusList2021",
+          "statusPurpose": "revocation",
+          "encodedList": "H4sIAAAAAAAAAzsAAD0tZkkBAAAA"
+        }
+      }
+    }
+  }
+}
+```
