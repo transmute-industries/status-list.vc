@@ -1,5 +1,7 @@
 # status-list.vc
 
+[Read the spec](https://github.com/w3c/vc-status-list-2021).
+
 - https://status-list.vc
 - https://status-list.vc/0
 - https://status-list.vc/1
