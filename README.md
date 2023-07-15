@@ -1,5 +1,9 @@
 # status-list.vc
 
+- https://status-list.vc
+- https://status-list.vc/1
+- https://status-list.vc/.well-known/did.json
+
 A website for testing W3C Verifiable Credentials.
 
 ## Create Private Signing Key
